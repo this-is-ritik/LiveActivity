@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="HotelCollectionViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="HotelCollectionViewCell" customModule="TestProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOU-MV-Ojs">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i6i-fK-GPZ">
+                                <rect key="frame" x="10" y="5" width="380" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="ReR-dV-1Hg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hotelName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdl-yr-Vsz">
+                                <rect key="frame" x="10" y="125" width="83" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dsc-Fv-PZf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="discountedPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVg-YK-GCa">
+                                <rect key="frame" x="266.5" y="125" width="123.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xfx-fo-8tR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="starRating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppv-Y4-d0L">
+                                <rect key="frame" x="10" y="155" width="78" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="NxZ-Pk-itq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzm-5q-bpp">
+                                <rect key="frame" x="50" y="175" width="300" height="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Book Now"/>
+                                <connections>
+                                    <action selector="bookNowTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4Mc-Gk-wur"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="originalPrice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7m-7z-1Sr">
+                                <rect key="frame" x="296" y="155" width="94" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3yF-Xj-Xh1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80261479591836737" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yVg-YK-GCa" secondAttribute="trailing" constant="10" id="1BT-fg-gDJ"/>
+                            <constraint firstItem="ppv-Y4-d0L" firstAttribute="leading" secondItem="QOU-MV-Ojs" secondAttribute="leading" constant="10" id="1qO-I7-VIz"/>
+                            <constraint firstItem="jzm-5q-bpp" firstAttribute="leading" secondItem="QOU-MV-Ojs" secondAttribute="leading" constant="50" id="AVI-3s-sOF"/>
+                            <constraint firstAttribute="trailing" secondItem="jzm-5q-bpp" secondAttribute="trailing" constant="50" id="CRx-YZ-UM5"/>
+                            <constraint firstItem="yVg-YK-GCa" firstAttribute="top" secondItem="i6i-fK-GPZ" secondAttribute="bottom" id="Dt6-BI-O08"/>
+                            <constraint firstItem="i6i-fK-GPZ" firstAttribute="top" secondItem="QOU-MV-Ojs" secondAttribute="top" constant="5" id="FWZ-SV-tB9"/>
+                            <constraint firstAttribute="bottom" secondItem="jzm-5q-bpp" secondAttribute="bottom" constant="5" id="Gow-Dx-E2d"/>
+                            <constraint firstItem="jzm-5q-bpp" firstAttribute="top" secondItem="ppv-Y4-d0L" secondAttribute="bottom" id="GtZ-Qv-aNQ"/>
+                            <constraint firstItem="ppv-Y4-d0L" firstAttribute="top" secondItem="Pdl-yr-Vsz" secondAttribute="bottom" id="IP7-iD-War"/>
+                            <constraint firstItem="Pdl-yr-Vsz" firstAttribute="top" secondItem="i6i-fK-GPZ" secondAttribute="bottom" id="Jh1-aY-I9t"/>
+                            <constraint firstAttribute="trailing" secondItem="i6i-fK-GPZ" secondAttribute="trailing" constant="10" id="KL9-JJ-2kF"/>
+                            <constraint firstItem="Pdl-yr-Vsz" firstAttribute="leading" secondItem="QOU-MV-Ojs" secondAttribute="leading" constant="10" id="MJA-kM-oSN"/>
+                            <constraint firstAttribute="trailing" secondItem="W7m-7z-1Sr" secondAttribute="trailing" constant="10" id="OyU-0q-EzZ"/>
+                            <constraint firstItem="i6i-fK-GPZ" firstAttribute="leading" secondItem="QOU-MV-Ojs" secondAttribute="leading" constant="10" id="zlc-KV-seZ"/>
+                            <constraint firstItem="W7m-7z-1Sr" firstAttribute="top" secondItem="yVg-YK-GCa" secondAttribute="bottom" id="zuj-ck-Mbe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="QOU-MV-Ojs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CgR-lL-3bi"/>
+                <constraint firstAttribute="trailing" secondItem="QOU-MV-Ojs" secondAttribute="trailing" id="JYU-jv-ZYF"/>
+                <constraint firstAttribute="bottom" secondItem="QOU-MV-Ojs" secondAttribute="bottom" id="b37-x0-wko"/>
+                <constraint firstItem="QOU-MV-Ojs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pge-Ih-vrP"/>
+            </constraints>
+            <size key="customSize" width="321" height="157"/>
+            <connections>
+                <outlet property="bookingBtn" destination="jzm-5q-bpp" id="h3O-Uu-cIs"/>
+                <outlet property="discountedPrice" destination="yVg-YK-GCa" id="jb4-a2-B4t"/>
+                <outlet property="hotelImage" destination="i6i-fK-GPZ" id="z1W-sf-OKx"/>
+                <outlet property="hotelName" destination="Pdl-yr-Vsz" id="CkS-VL-I4D"/>
+                <outlet property="originalPrice" destination="W7m-7z-1Sr" id="Cgh-Z5-m8R"/>
+                <outlet property="starRating" destination="ppv-Y4-d0L" id="QMk-BW-ETy"/>
+            </connections>
+            <point key="canvasLocation" x="175.36231884057972" y="53.571428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
